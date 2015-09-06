@@ -1,0 +1,45 @@
+// StyledForm! -- (Sidebar Form)
+
+.styledForm {
+    border: 1px solid $styledFormBorder;
+    .input {
+        position: relative;
+        height: 40px;
+        border-bottom: 1px solid $styledFormBorder;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    input {
+        border: none;
+        width: 100%;
+        background-color: #fff;
+        height: 100%;
+        margin: 0;
+        padding: 0 10px 0 40px;
+        color: $sLightGray;
+        font-size: 15px;
+        @include placeholder($sLightGray);
+    }
+    label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 100%;
+        &:before {
+            display: block;
+            line-height: 20px;
+            font-size: 18px;
+        }
+    }
+    .input.has-error {
+        color: red;
+        input {
+            color: red;
+            @include placeholder(#F00);
+        }
+    }
+}
+
+// !StyledForm

@@ -1,0 +1,175 @@
+// Sidebar!
+
+#sidebar {
+    @include box-shadow(0px 5px 15px -5px rgba(0, 0, 0, 0.4));
+    width: $sidebar-width;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    background-color: $sbgColor;
+    text-align: center;
+    padding: 30px 0 35px;
+    @include transition($cTransition);
+    @include lg-desktop {
+        right: -310px;
+        @include box-shadow(0 0 0 0 #000);
+        &.active {
+            right: 0;
+            @include box-shadow(0px 5px 15px -5px rgba(0, 0, 0, 0.4));
+        }
+    }
+
+    @include phone {
+        right: -100%;
+        width: 100%;
+    }
+
+    .scroll {
+        overflow: auto;
+        height: 100%;
+        width: 100%;
+        padding: 0 20px;
+        &.mCustomScrollbar { padding-right:0; }
+        &.mCustomScrollbar.mCS_no_scrollbar { padding-right:20px; }
+    }
+    .green {
+        &, * {
+            color: $sGreen;
+        }
+    }
+    .sbTitle {
+        display: inline-block;
+        max-width: 150px;
+        &, * {
+            color: $sNavyBlue;
+            margin: 0;
+            line-height: normal;
+        }
+    }
+    .styledForm {
+        margin: 40px 0 0;
+    }
+    .cPrice {
+        @extend .euro;
+        font-size: 48px;
+        line-height: 100%;
+        margin-bottom: 15px;
+    }
+    .fluidBox {
+        @include phone {
+            display: none;
+        }
+
+        .sbSummary ul{
+            padding: 30px 0;
+            margin:0;
+        }
+        li {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto;
+            &, * {
+                color: $sLightGray;
+            }
+            h3 {
+                font-size: 16px;
+                text-transform: uppercase;
+                &:before {
+                    display: block;
+                    font-size: 50px;
+                    line-height: 0;
+                    height: 50px;
+                    margin-bottom: 8px;
+                }
+            }
+            &:before {
+                @extend .ampersand;
+                content: '&';
+                margin: 20px 0 5px;
+                display: block;
+                font-weight: 700;
+            }
+            &:first-child:before {
+                display: none;
+            }
+        }
+    }
+    .sbPrice {
+        @include phone {
+            margin-top: 30px;
+        }
+
+        .h6 {
+            margin: 0;
+        }
+        .btn {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// !Sidebar
+
+// Sidebar Trigger!
+
+#sTrigger {
+    position: absolute;
+    z-index:20; 
+    right: 100%;
+    top: 0;
+    padding: 15px 10px 13px;
+    border-color: $navTrigger;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    background-color: #fff;
+    display: none;
+    @include lg-desktop {
+        display: block;
+    }
+
+    @include phone {
+        position: fixed;
+        right: 0;
+    }
+
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: $navTrigger;
+        margin-bottom: 3px;
+        @include transition($cTransition);
+        top: 0;
+        &.trFirst {
+            @include transform-origin(50% 50%);
+            position: relative;
+        }
+        &.trSecond {
+            @include transform-origin(50% 50%);
+        }
+    }
+}
+
+#sidebar.active {
+    #sTrigger span {
+        &.trThird {
+            @include opacity(0);
+        }
+        &.trFirst {
+            @include rotate(45deg);
+            top: 6px;
+        }
+        &.trSecond {
+            @include rotate(-45deg);
+        }
+    }
+    #sTrigger {
+        @include phone {
+            border-color: #fff;
+        }
+    }
+}
+
+// !Sidebar Trigger

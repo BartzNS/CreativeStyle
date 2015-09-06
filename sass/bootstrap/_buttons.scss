@@ -1,0 +1,37 @@
+.btn {
+    @include unstyled-link;
+    width: 100%;
+    cursor: pointer;
+    @include transition(all 0.3s ease-in-out);
+}
+
+.btn-primary {
+    display: block;
+    background-color: $sGreen;
+    color: #fff;
+    position: relative;
+    padding: 12px 30px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include border-radius(2px);
+    &:hover, &:active {
+        background-color: darken($sGreen, 10%);
+        color: #fff;
+        text-decoration: none; 
+    }
+    &:after {
+        content: '';
+        background: url("../img/arrow.png") no-repeat center center;
+        position: absolute;
+        width: 9px;
+        height: 14px;
+        right: 15px;
+        top: 50%;
+        margin-top: -7px;
+        @include transition(all .3s ease-in-out); 
+    }
+    &:active:after {
+        right: 10px;
+    }
+}

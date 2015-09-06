@@ -1,0 +1,55 @@
+// mainContainer!
+
+.moved .mCont {
+    @include lg-desktop{
+        left: -$sidebar-width;
+    }
+    @include phone {
+        left: 0;
+        position: fixed;
+    }
+}
+
+.mCont {
+    @include lg-desktop-only {
+        height: 100%;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        .lgTab {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    padding: 100px $sidebar-width 110px 0;
+    overflow: auto;
+    width: 100%;
+    position: relative;
+    left: 0;
+    @include transition($cTransition);
+    @include lg-desktop {
+        padding-right: 0;
+    }
+    @include phone {
+        padding:60px 0; 
+    }
+
+    .textDiv {
+        max-width: 812px;
+        letter-spacing: 0em;
+        margin-bottom: 70px;
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .title {
+        margin: 0 0 20px;
+        @include headings {
+            margin: 0;
+            color: $navyBlueText;
+        }
+    }
+}
+
+// !mainContainer

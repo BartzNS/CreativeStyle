@@ -1,0 +1,93 @@
+@mixin font-family($name) {
+    @if $name == "LB" {
+        font-family: $headings-font-family;
+    }
+    @else if $name == "L" {
+        font-family: $font-family-sans-serif;
+    }
+}
+
+@mixin filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+@mixin phone {
+    @media only screen and (max-width: $screen-xs - 1) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $screen-sm - 1) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media only screen and (min-width: $screen-xs) and (max-width: $screen-sm - 1) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (max-width: $screen-md - 1) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media only screen and (min-width: $screen-sm) and (max-width: $screen-md - 1) {
+        @content;
+    }
+}
+
+@mixin lg-desktop {
+    @media only screen and (max-width: $screen-lg - 1) {
+        @content;
+    }
+}
+
+@mixin lg-desktop-only {
+    @media only screen and (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin headings{
+    h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6 { @content; }
+}
+
+.mediaHelper {
+    width: 0;
+    @include lg-desktop {
+        width: 1px;
+    }
+
+    @include desktop {
+        width: 2px;
+    }
+
+    @include tablet {
+        width: 3px;
+    }
+
+    @include phone {
+        width: 4px;
+    }
+}
+
+html, body {
+    -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust: none; 
+    -ms-overflow-style: scrollbar;
+}
+
+*, *:focus { outline:none; }
+img { border:none; }
+
+::selection, ::-moz-focus-inner { 
+  border: 0; 
+}
