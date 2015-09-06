@@ -76,6 +76,8 @@ function PageInit(){
 	$('.styledForm').validator(); 
 	$('#sidebar .scroll').mCustomScrollbar({
 		autoHideScrollbar: true,
+		axis:'y',
+		mouseWheel:{ scrollAmount: 80 },
 	});
 
 	$('.submitBtn').click(function(){
