@@ -47,7 +47,8 @@ h1, .h1 {
     @include tablet {
         font-size: $font-size-h1 * 0.75;
     }
-    @include phone { 
+
+    @include phone {
         font-size: $font-size-h1 * 0.65;
     }
 }
@@ -60,7 +61,8 @@ h2, .h2 {
         font-size: $font-size-h2 * 0.75;
         line-height: 36px * 0.75;
     }
-    @include phone { 
+
+    @include phone {
         font-size: $font-size-h2 * 0.65;
     }
 }
@@ -96,13 +98,19 @@ h6, .h6 {
 
 // Body text
 // -------------------------
+body {
+    @include tablet {
+        font-size: $font-size-base * 0.75;
+        line-height: 23px * 0.75;
+    }
+}
 
 p {
     margin: 5px 0;
     line-height: 23px;
     @include tablet {
-        font-size:$font-size-base * 0.75;;
-        line-height:23px * 0.75;
+        font-size: $font-size-base * 0.75;
+        line-height: 23px * 0.75;
     }
 }
 

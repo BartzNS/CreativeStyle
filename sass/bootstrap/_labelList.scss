@@ -16,6 +16,7 @@
     .item {
         width: 260px;
         margin-right: 16px;
+
         &:last-child {
             margin-right: 0;
         }
@@ -31,13 +32,13 @@
             }
             &:last-child {
                 width: 100%;
-                h3 span {
+                .pTitle strong {
                     height: auto;
                 }
-                h3 {
+                .pTitle {
                     margin-bottom: 25px;
                 }
-                h3:before {
+                .pTitle:before {
                     margin-bottom: 20px;
                 }
             }
@@ -52,13 +53,13 @@
             &:last-child {
                 margin-bottom: 0;
             }
-            h3 span {
+            .pTitle strong {
                 height: auto;
             }
-            h3 {
+            .pTitle {
                 margin-bottom: 25px;
             }
-            h3:before {
+            .pTitle:before {
                 height: 60px;
                 font-size: 60px;
                 margin-bottom: 20px;
@@ -81,18 +82,20 @@
             margin-top: 0;
         }
     }
-    h3 {
-        margin: 0 0 30px;
+    .pTitle {
+        display:block;
+        margin: 0 0 20px;
         color: $navyBlueText;
         text-transform: uppercase;
         @include transition($cTransition);
     }
-    h3 span {
+    .pTitle strong {
         height: 50px;
         display: inline-block;
         vertical-align: top;
+        font-weight:900;
     }
-    h3:before {
+    .pTitle:before {
         display: block;
         font-size: 94px;
         height: 94px;
@@ -101,13 +104,18 @@
     }
     .pPrice {
         display: inline-block;
-        margin: 15px 0 10px;
+        margin: 18px 0 10px;
         color: $lightBlueText;
         @extend .euro;
     }
-    p {
+    .nText {
+        display:block;      
         @include lg-desktop {
             font-size: 16px;
+        }
+        @include tablet {
+            font-size: $font-size-base * 0.75;
+            line-height: 23px * 0.75;
         }
     }
     label {
@@ -147,7 +155,7 @@
         background-color: $navyBlueBg;
         border-color: $navyBlueBg;
     }
-    input:checked + label h3 {
+    input:checked + label .pTitle {
         color: #fff;
     }
 }

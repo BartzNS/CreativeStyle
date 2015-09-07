@@ -55,7 +55,7 @@
         @extend .euro;
         font-size: 48px;
         line-height: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
     .fluidBox {
         @include phone {
@@ -73,9 +73,10 @@
             &, * {
                 color: $sLightGray;
             }
-            h3 {
+            .pTitle {
                 font-size: 16px;
                 text-transform: uppercase;
+                display:block;
                 &:before {
                     display: block;
                     font-size: 50px;

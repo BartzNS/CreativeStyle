@@ -342,85 +342,93 @@ h1, .h1 {
   }
 }
 
-/* line 55, ../sass/bootstrap/_type.scss */
+/* line 56, ../sass/bootstrap/_type.scss */
 h2, .h2 {
   font-size: 30px;
   margin-bottom: 20px;
   line-height: 36px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 55, ../sass/bootstrap/_type.scss */
+  /* line 56, ../sass/bootstrap/_type.scss */
   h2, .h2 {
     font-size: 22.5px;
     line-height: 27px;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 55, ../sass/bootstrap/_type.scss */
+  /* line 56, ../sass/bootstrap/_type.scss */
   h2, .h2 {
     font-size: 19.5px;
   }
 }
 
-/* line 68, ../sass/bootstrap/_type.scss */
+/* line 70, ../sass/bootstrap/_type.scss */
 h3, .h3 {
   font-size: 24px;
   line-height: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 68, ../sass/bootstrap/_type.scss */
+  /* line 70, ../sass/bootstrap/_type.scss */
   h3, .h3 {
     font-size: 18px;
   }
 }
 
-/* line 76, ../sass/bootstrap/_type.scss */
+/* line 78, ../sass/bootstrap/_type.scss */
 h4, .h4 {
   font-size: 18px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 76, ../sass/bootstrap/_type.scss */
+  /* line 78, ../sass/bootstrap/_type.scss */
   h4, .h4 {
     font-size: 13.5px;
   }
 }
 
-/* line 83, ../sass/bootstrap/_type.scss */
+/* line 85, ../sass/bootstrap/_type.scss */
 h5, .h5 {
   font-size: 16px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 83, ../sass/bootstrap/_type.scss */
+  /* line 85, ../sass/bootstrap/_type.scss */
   h5, .h5 {
     font-size: 12px;
   }
 }
 
-/* line 90, ../sass/bootstrap/_type.scss */
+/* line 92, ../sass/bootstrap/_type.scss */
 h6, .h6 {
   font-size: 14px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 90, ../sass/bootstrap/_type.scss */
+  /* line 92, ../sass/bootstrap/_type.scss */
   h6, .h6 {
     font-size: 10.5px;
   }
 }
 
-/* line 100, ../sass/bootstrap/_type.scss */
+@media only screen and (max-width: 767px) {
+  /* line 101, ../sass/bootstrap/_type.scss */
+  body {
+    font-size: 13.5px;
+    line-height: 17.25px;
+  }
+}
+
+/* line 108, ../sass/bootstrap/_type.scss */
 p {
   margin: 5px 0;
   line-height: 23px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 100, ../sass/bootstrap/_type.scss */
+  /* line 108, ../sass/bootstrap/_type.scss */
   p {
     font-size: 13.5px;
     line-height: 17.25px;
   }
 }
 
-/* line 109, ../sass/bootstrap/_type.scss */
+/* line 117, ../sass/bootstrap/_type.scss */
 .lead {
   margin-bottom: 25px;
   font-size: 20px;
@@ -428,66 +436,66 @@ p {
   line-height: 1.4;
 }
 @media (min-width: 768px) {
-  /* line 109, ../sass/bootstrap/_type.scss */
+  /* line 117, ../sass/bootstrap/_type.scss */
   .lead {
     font-size: 27px;
   }
 }
 
-/* line 123, ../sass/bootstrap/_type.scss */
+/* line 131, ../sass/bootstrap/_type.scss */
 small,
 .small {
   font-size: 88%;
 }
 
-/* line 128, ../sass/bootstrap/_type.scss */
+/* line 136, ../sass/bootstrap/_type.scss */
 mark,
 .mark {
   background-color: #fcf8e3;
   padding: .2em;
 }
 
-/* line 135, ../sass/bootstrap/_type.scss */
+/* line 143, ../sass/bootstrap/_type.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 139, ../sass/bootstrap/_type.scss */
+/* line 147, ../sass/bootstrap/_type.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 143, ../sass/bootstrap/_type.scss */
+/* line 151, ../sass/bootstrap/_type.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 147, ../sass/bootstrap/_type.scss */
+/* line 155, ../sass/bootstrap/_type.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 151, ../sass/bootstrap/_type.scss */
+/* line 159, ../sass/bootstrap/_type.scss */
 .text-nowrap {
   white-space: nowrap;
 }
 
-/* line 156, ../sass/bootstrap/_type.scss */
+/* line 164, ../sass/bootstrap/_type.scss */
 .text-lowercase {
   text-transform: lowercase;
 }
 
-/* line 160, ../sass/bootstrap/_type.scss */
+/* line 168, ../sass/bootstrap/_type.scss */
 .text-uppercase, .initialism {
   text-transform: uppercase;
 }
 
-/* line 164, ../sass/bootstrap/_type.scss */
+/* line 172, ../sass/bootstrap/_type.scss */
 .text-capitalize {
   text-transform: capitalize;
 }
 
-/* line 169, ../sass/bootstrap/_type.scss */
+/* line 177, ../sass/bootstrap/_type.scss */
 .text-muted {
   color: #777777;
 }
@@ -547,7 +555,7 @@ a.text-danger:focus {
   color: #843534;
 }
 
-/* line 186, ../sass/bootstrap/_type.scss */
+/* line 194, ../sass/bootstrap/_type.scss */
 .bg-primary {
   color: #fff;
 }
@@ -607,20 +615,20 @@ a.bg-danger:focus {
   background-color: #e4b9b9;
 }
 
-/* line 205, ../sass/bootstrap/_type.scss */
+/* line 213, ../sass/bootstrap/_type.scss */
 .page-header {
   padding-bottom: 11.5px;
   margin: 50px 0 25px;
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 215, ../sass/bootstrap/_type.scss */
+/* line 223, ../sass/bootstrap/_type.scss */
 ul,
 ol {
   margin-top: 0;
   margin-bottom: 12.5px;
 }
-/* line 219, ../sass/bootstrap/_type.scss */
+/* line 227, ../sass/bootstrap/_type.scss */
 ul ul,
 ul ol,
 ol ul,
@@ -628,43 +636,43 @@ ol ol {
   margin-bottom: 0;
 }
 
-/* line 234, ../sass/bootstrap/_type.scss */
+/* line 242, ../sass/bootstrap/_type.scss */
 .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
 
-/* line 239, ../sass/bootstrap/_type.scss */
+/* line 247, ../sass/bootstrap/_type.scss */
 .list-inline {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-/* line 242, ../sass/bootstrap/_type.scss */
+/* line 250, ../sass/bootstrap/_type.scss */
 .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 250, ../sass/bootstrap/_type.scss */
+/* line 258, ../sass/bootstrap/_type.scss */
 dl {
   margin-top: 0;
   margin-bottom: 25px;
 }
 
-/* line 256, ../sass/bootstrap/_type.scss */
+/* line 264, ../sass/bootstrap/_type.scss */
 dt,
 dd {
   line-height: 1.42857;
 }
 
-/* line 261, ../sass/bootstrap/_type.scss */
+/* line 269, ../sass/bootstrap/_type.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 265, ../sass/bootstrap/_type.scss */
+/* line 273, ../sass/bootstrap/_type.scss */
 dd {
   margin-left: 0;
 }
@@ -679,7 +687,7 @@ dd {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 282, ../sass/bootstrap/_type.scss */
+  /* line 290, ../sass/bootstrap/_type.scss */
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -689,38 +697,38 @@ dd {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* line 289, ../sass/bootstrap/_type.scss */
+  /* line 297, ../sass/bootstrap/_type.scss */
   .dl-horizontal dd {
     margin-left: 180px;
   }
 }
 
-/* line 299, ../sass/bootstrap/_type.scss */
+/* line 307, ../sass/bootstrap/_type.scss */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #777777;
 }
 
-/* line 305, ../sass/bootstrap/_type.scss */
+/* line 313, ../sass/bootstrap/_type.scss */
 .initialism {
   font-size: 90%;
 }
 
-/* line 311, ../sass/bootstrap/_type.scss */
+/* line 319, ../sass/bootstrap/_type.scss */
 blockquote {
   padding: 12.5px 25px;
   margin: 0 0 25px;
   font-size: 22.5px;
   border-left: 5px solid #eeeeee;
 }
-/* line 319, ../sass/bootstrap/_type.scss */
+/* line 327, ../sass/bootstrap/_type.scss */
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
-/* line 325, ../sass/bootstrap/_type.scss */
+/* line 333, ../sass/bootstrap/_type.scss */
 blockquote footer,
 blockquote small,
 blockquote .small {
@@ -729,14 +737,14 @@ blockquote .small {
   line-height: 1.42857;
   color: #777777;
 }
-/* line 333, ../sass/bootstrap/_type.scss */
+/* line 341, ../sass/bootstrap/_type.scss */
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
   content: '\2014 \00A0';
 }
 
-/* line 344, ../sass/bootstrap/_type.scss */
+/* line 352, ../sass/bootstrap/_type.scss */
 .blockquote-reverse,
 blockquote.pull-right {
   padding-right: 15px;
@@ -745,7 +753,7 @@ blockquote.pull-right {
   border-left: 0;
   text-align: right;
 }
-/* line 355, ../sass/bootstrap/_type.scss */
+/* line 363, ../sass/bootstrap/_type.scss */
 .blockquote-reverse footer:before,
 .blockquote-reverse small:before,
 .blockquote-reverse .small:before,
@@ -754,7 +762,7 @@ blockquote.pull-right small:before,
 blockquote.pull-right .small:before {
   content: '';
 }
-/* line 358, ../sass/bootstrap/_type.scss */
+/* line 366, ../sass/bootstrap/_type.scss */
 .blockquote-reverse footer:after,
 .blockquote-reverse small:after,
 .blockquote-reverse .small:after,
@@ -764,40 +772,40 @@ blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
 
-/* line 367, ../sass/bootstrap/_type.scss */
+/* line 375, ../sass/bootstrap/_type.scss */
 address {
   margin-bottom: 25px;
   font-style: normal;
   line-height: 1.42857;
 }
 
-/* line 373, ../sass/bootstrap/_type.scss */
+/* line 381, ../sass/bootstrap/_type.scss */
 .fLight, .fLight * {
   font-weight: 300;
 }
 
-/* line 377, ../sass/bootstrap/_type.scss */
+/* line 385, ../sass/bootstrap/_type.scss */
 .fNormal, .fNormal * {
   font-weight: 400;
 }
 
-/* line 381, ../sass/bootstrap/_type.scss */
+/* line 389, ../sass/bootstrap/_type.scss */
 .fBold, .fBold * {
   font-weight: 700;
 }
 
-/* line 385, ../sass/bootstrap/_type.scss */
+/* line 393, ../sass/bootstrap/_type.scss */
 .fHeavy, .fHeavy * {
   font-weight: 900;
 }
 
-/* line 389, ../sass/bootstrap/_type.scss */
+/* line 397, ../sass/bootstrap/_type.scss */
 .euro:before, .labelList .pPrice:before, #sidebar .cPrice:before {
   content: '€ ';
   display: inline;
 }
 
-/* line 394, ../sass/bootstrap/_type.scss */
+/* line 402, ../sass/bootstrap/_type.scss */
 .ampersand, #sidebar .fluidBox li:before {
   font-size: 48px;
   color: #b3b8bb;
@@ -2406,7 +2414,7 @@ address {
 .mCont .textDiv {
   max-width: 812px;
   letter-spacing: 0em;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 /* line 42, ../sass/bootstrap/_mainContainer.scss */
 .mCont .textDiv *:last-child {
@@ -2414,7 +2422,7 @@ address {
 }
 /* line 46, ../sass/bootstrap/_mainContainer.scss */
 .mCont .title {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
 }
 /* line 61, ../sass/bootstrap/_mymixins.scss */
 .mCont .title h1, .mCont .title h2, .mCont .title h3, .mCont .title h4, .mCont .title h5, .mCont .title h6, .mCont .title .h1, .mCont .title .h2, .mCont .title .h3, .mCont .title .h4, .mCont .title .h5, .mCont .title .h6 {
@@ -2445,7 +2453,7 @@ address {
   width: 260px;
   margin-right: 16px;
 }
-/* line 19, ../sass/bootstrap/_labelList.scss */
+/* line 20, ../sass/bootstrap/_labelList.scss */
 .labelList .item:last-child {
   margin-right: 0;
 }
@@ -2461,24 +2469,24 @@ address {
     width: 33.3%;
     padding: 0 5px;
   }
-  /* line 29, ../sass/bootstrap/_labelList.scss */
+  /* line 30, ../sass/bootstrap/_labelList.scss */
   .labelList .item, .labelList .item:first-child {
     margin: 0 -4px 0 0;
   }
-  /* line 32, ../sass/bootstrap/_labelList.scss */
+  /* line 33, ../sass/bootstrap/_labelList.scss */
   .labelList .item:last-child {
     width: 100%;
   }
-  /* line 34, ../sass/bootstrap/_labelList.scss */
-  .labelList .item:last-child h3 span {
+  /* line 35, ../sass/bootstrap/_labelList.scss */
+  .labelList .item:last-child .pTitle strong {
     height: auto;
   }
-  /* line 37, ../sass/bootstrap/_labelList.scss */
-  .labelList .item:last-child h3 {
+  /* line 38, ../sass/bootstrap/_labelList.scss */
+  .labelList .item:last-child .pTitle {
     margin-bottom: 25px;
   }
-  /* line 40, ../sass/bootstrap/_labelList.scss */
-  .labelList .item:last-child h3:before {
+  /* line 41, ../sass/bootstrap/_labelList.scss */
+  .labelList .item:last-child .pTitle:before {
     margin-bottom: 20px;
   }
 }
@@ -2488,89 +2496,102 @@ address {
     width: 100%;
     padding: 0;
   }
-  /* line 49, ../sass/bootstrap/_labelList.scss */
+  /* line 50, ../sass/bootstrap/_labelList.scss */
   .labelList .item, .labelList .item:first-child {
     margin: 0 0 20px;
   }
-  /* line 52, ../sass/bootstrap/_labelList.scss */
+  /* line 53, ../sass/bootstrap/_labelList.scss */
   .labelList .item:last-child {
     margin-bottom: 0;
   }
-  /* line 55, ../sass/bootstrap/_labelList.scss */
-  .labelList .item h3 span {
+  /* line 56, ../sass/bootstrap/_labelList.scss */
+  .labelList .item .pTitle strong {
     height: auto;
   }
-  /* line 58, ../sass/bootstrap/_labelList.scss */
-  .labelList .item h3 {
+  /* line 59, ../sass/bootstrap/_labelList.scss */
+  .labelList .item .pTitle {
     margin-bottom: 25px;
   }
-  /* line 61, ../sass/bootstrap/_labelList.scss */
-  .labelList .item h3:before {
+  /* line 62, ../sass/bootstrap/_labelList.scss */
+  .labelList .item .pTitle:before {
     height: 60px;
     font-size: 60px;
     margin-bottom: 20px;
   }
 }
-/* line 68, ../sass/bootstrap/_labelList.scss */
+/* line 69, ../sass/bootstrap/_labelList.scss */
 .labelList .ampersand, .labelList #sidebar .fluidBox li:before, #sidebar .fluidBox .labelList li:before {
   width: 60px;
   margin-right: 16px;
 }
 @media only screen and (max-width: 1549px) {
-  /* line 68, ../sass/bootstrap/_labelList.scss */
+  /* line 69, ../sass/bootstrap/_labelList.scss */
   .labelList .ampersand, .labelList #sidebar .fluidBox li:before, #sidebar .fluidBox .labelList li:before {
     width: 40px;
   }
 }
 @media only screen and (max-width: 1099px) {
-  /* line 68, ../sass/bootstrap/_labelList.scss */
+  /* line 69, ../sass/bootstrap/_labelList.scss */
   .labelList .ampersand, .labelList #sidebar .fluidBox li:before, #sidebar .fluidBox .labelList li:before {
     width: 100%;
     margin: 20px 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 68, ../sass/bootstrap/_labelList.scss */
+  /* line 69, ../sass/bootstrap/_labelList.scss */
   .labelList .ampersand, .labelList #sidebar .fluidBox li:before, #sidebar .fluidBox .labelList li:before {
     margin-top: 0;
   }
 }
-/* line 84, ../sass/bootstrap/_labelList.scss */
-.labelList h3 {
-  margin: 0 0 30px;
+/* line 85, ../sass/bootstrap/_labelList.scss */
+.labelList .pTitle {
+  display: block;
+  margin: 0 0 20px;
   color: #23262b;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 90, ../sass/bootstrap/_labelList.scss */
-.labelList h3 span {
+/* line 92, ../sass/bootstrap/_labelList.scss */
+.labelList .pTitle strong {
   height: 50px;
   display: inline-block;
   vertical-align: top;
+  font-weight: 900;
 }
-/* line 95, ../sass/bootstrap/_labelList.scss */
-.labelList h3:before {
+/* line 98, ../sass/bootstrap/_labelList.scss */
+.labelList .pTitle:before {
   display: block;
   font-size: 94px;
   height: 94px;
   line-height: 0;
   margin: 0 0 50px;
 }
-/* line 102, ../sass/bootstrap/_labelList.scss */
+/* line 105, ../sass/bootstrap/_labelList.scss */
 .labelList .pPrice {
   display: inline-block;
-  margin: 15px 0 10px;
+  margin: 18px 0 10px;
   color: #56a0d5;
 }
+/* line 111, ../sass/bootstrap/_labelList.scss */
+.labelList .nText {
+  display: block;
+}
 @media only screen and (max-width: 1549px) {
-  /* line 108, ../sass/bootstrap/_labelList.scss */
-  .labelList p {
+  /* line 111, ../sass/bootstrap/_labelList.scss */
+  .labelList .nText {
     font-size: 16px;
   }
 }
-/* line 113, ../sass/bootstrap/_labelList.scss */
+@media only screen and (max-width: 767px) {
+  /* line 111, ../sass/bootstrap/_labelList.scss */
+  .labelList .nText {
+    font-size: 13.5px;
+    line-height: 17.25px;
+  }
+}
+/* line 121, ../sass/bootstrap/_labelList.scss */
 .labelList label {
   padding: 25px 20px 20px;
   display: block;
@@ -2584,12 +2605,12 @@ address {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 122, ../sass/bootstrap/_labelList.scss */
+/* line 130, ../sass/bootstrap/_labelList.scss */
 .labelList label:hover {
   background-color: white;
   border-color: #56a0d5;
 }
-/* line 127, ../sass/bootstrap/_labelList.scss */
+/* line 135, ../sass/bootstrap/_labelList.scss */
 .labelList input[type="checkbox"] + label:after, .labelList input[type="radio"] + label:after {
   content: '';
   display: block;
@@ -2597,29 +2618,29 @@ address {
   background: url("../img/radio.png") no-repeat center center;
   height: 17px;
 }
-/* line 134, ../sass/bootstrap/_labelList.scss */
+/* line 142, ../sass/bootstrap/_labelList.scss */
 .labelList input[type="radio"]:checked + label:after {
   background: url("../img/radio_active.png") no-repeat center center;
 }
-/* line 137, ../sass/bootstrap/_labelList.scss */
+/* line 145, ../sass/bootstrap/_labelList.scss */
 .labelList input[type="checkbox"] + label:after {
   background: url("../img/checkbox.png") no-repeat center center;
 }
-/* line 140, ../sass/bootstrap/_labelList.scss */
+/* line 148, ../sass/bootstrap/_labelList.scss */
 .labelList input[type="checkbox"]:checked + label:after {
   background: url("../img/checkbox_active.png") no-repeat center center;
 }
-/* line 143, ../sass/bootstrap/_labelList.scss */
+/* line 151, ../sass/bootstrap/_labelList.scss */
 .labelList input {
   display: none;
 }
-/* line 146, ../sass/bootstrap/_labelList.scss */
+/* line 154, ../sass/bootstrap/_labelList.scss */
 .labelList input:checked + label {
   background-color: #06152d;
   border-color: #06152d;
 }
-/* line 150, ../sass/bootstrap/_labelList.scss */
-.labelList input:checked + label h3 {
+/* line 158, ../sass/bootstrap/_labelList.scss */
+.labelList input:checked + label .pTitle {
   color: #fff;
 }
 
@@ -2644,7 +2665,7 @@ address {
   background-color: #fff;
   height: 100%;
   margin: 0;
-  padding: 0 10px 0 40px;
+  padding: 0 10px 0 42px;
   color: #b3b8bb;
   font-size: 15px;
 }
@@ -2773,7 +2794,7 @@ address {
 #sidebar .cPrice {
   font-size: 48px;
   line-height: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 @media only screen and (max-width: 479px) {
   /* line 60, ../sass/bootstrap/_sidebar.scss */
@@ -2797,45 +2818,46 @@ address {
   color: #b3b8bb;
 }
 /* line 76, ../sass/bootstrap/_sidebar.scss */
-#sidebar .fluidBox li h3 {
+#sidebar .fluidBox li .pTitle {
   font-size: 16px;
   text-transform: uppercase;
+  display: block;
 }
-/* line 79, ../sass/bootstrap/_sidebar.scss */
-#sidebar .fluidBox li h3:before {
+/* line 80, ../sass/bootstrap/_sidebar.scss */
+#sidebar .fluidBox li .pTitle:before {
   display: block;
   font-size: 50px;
   line-height: 0;
   height: 50px;
   margin-bottom: 8px;
 }
-/* line 87, ../sass/bootstrap/_sidebar.scss */
+/* line 88, ../sass/bootstrap/_sidebar.scss */
 #sidebar .fluidBox li:before {
   content: '&';
   margin: 20px 0 5px;
   display: block;
   font-weight: 700;
 }
-/* line 94, ../sass/bootstrap/_sidebar.scss */
+/* line 95, ../sass/bootstrap/_sidebar.scss */
 #sidebar .fluidBox li:first-child:before {
   display: none;
 }
 @media only screen and (max-width: 479px) {
-  /* line 99, ../sass/bootstrap/_sidebar.scss */
+  /* line 100, ../sass/bootstrap/_sidebar.scss */
   #sidebar .sbPrice {
     margin-top: 30px;
   }
 }
-/* line 104, ../sass/bootstrap/_sidebar.scss */
+/* line 105, ../sass/bootstrap/_sidebar.scss */
 #sidebar .sbPrice .h6 {
   margin: 0;
 }
-/* line 107, ../sass/bootstrap/_sidebar.scss */
+/* line 108, ../sass/bootstrap/_sidebar.scss */
 #sidebar .sbPrice .btn {
   margin-bottom: 0;
 }
 
-/* line 117, ../sass/bootstrap/_sidebar.scss */
+/* line 118, ../sass/bootstrap/_sidebar.scss */
 #sTrigger {
   position: absolute;
   z-index: 20;
@@ -2849,19 +2871,19 @@ address {
   display: none;
 }
 @media only screen and (max-width: 1549px) {
-  /* line 117, ../sass/bootstrap/_sidebar.scss */
+  /* line 118, ../sass/bootstrap/_sidebar.scss */
   #sTrigger {
     display: block;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 117, ../sass/bootstrap/_sidebar.scss */
+  /* line 118, ../sass/bootstrap/_sidebar.scss */
   #sTrigger {
     position: fixed;
     right: 0;
   }
 }
-/* line 137, ../sass/bootstrap/_sidebar.scss */
+/* line 138, ../sass/bootstrap/_sidebar.scss */
 #sTrigger span {
   display: block;
   width: 30px;
@@ -2873,7 +2895,7 @@ address {
   transition: all 0.3s ease-in-out;
   top: 0;
 }
-/* line 145, ../sass/bootstrap/_sidebar.scss */
+/* line 146, ../sass/bootstrap/_sidebar.scss */
 #sTrigger span.trFirst {
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
@@ -2881,7 +2903,7 @@ address {
   transform-origin: 50% 50%;
   position: relative;
 }
-/* line 149, ../sass/bootstrap/_sidebar.scss */
+/* line 150, ../sass/bootstrap/_sidebar.scss */
 #sTrigger span.trSecond {
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
@@ -2889,12 +2911,12 @@ address {
   transform-origin: 50% 50%;
 }
 
-/* line 157, ../sass/bootstrap/_sidebar.scss */
+/* line 158, ../sass/bootstrap/_sidebar.scss */
 #sidebar.active #sTrigger span.trThird {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-/* line 160, ../sass/bootstrap/_sidebar.scss */
+/* line 161, ../sass/bootstrap/_sidebar.scss */
 #sidebar.active #sTrigger span.trFirst {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -2902,7 +2924,7 @@ address {
   transform: rotate(45deg);
   top: 6px;
 }
-/* line 164, ../sass/bootstrap/_sidebar.scss */
+/* line 165, ../sass/bootstrap/_sidebar.scss */
 #sidebar.active #sTrigger span.trSecond {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -2910,7 +2932,7 @@ address {
   transform: rotate(-45deg);
 }
 @media only screen and (max-width: 479px) {
-  /* line 168, ../sass/bootstrap/_sidebar.scss */
+  /* line 169, ../sass/bootstrap/_sidebar.scss */
   #sidebar.active #sTrigger {
     border-color: #fff;
   }
